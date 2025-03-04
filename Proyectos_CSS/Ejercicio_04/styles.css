@@ -1,0 +1,48 @@
+
+/* Nombre: Raul Rivera  
+Curso: 1ºDAM
+Fecha:  4/03/25
+Ejercicio 4: Flexbox*/
+
+
+/* Estilos para todo el contenido */ 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #e7e9e9;
+}
+
+
+/* Contendor principal que usara flex, ajustamos con "justify-content" las cajas hijas */ 
+.contenedor-principal{
+    display: flex; /* Establece el contenedor como flex */
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+    width: 100%; /* Ajusta el ancho del contenedor */
+}
+
+
+/* Definimos el tamaño de todas las cajas */ 
+.box {
+    width: 100px; 
+    height: 100px; 
+    border: black solid ;
+}
+
+/* A cada elemento hijo le asignamos un color */ 
+
+.box:first-child {
+    background-color: blueviolet;
+}
+
+/* Selecciona el segundo hijo */
+.box:nth-child(2) {
+    background-color: saddlebrown;
+}
+
+/* Selecciona el tercer hijo */
+.box:nth-child(3) {
+    background-color: darkcyan;
+}

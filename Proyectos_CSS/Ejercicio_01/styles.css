@@ -1,0 +1,141 @@
+/* Raul Rivera
+1DAM
+[4/03/2025] 
+Ejercicio 1: Aplicar estilos Basicos */
+
+
+/* Estilos para todo el documento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Establecemos los estilos basicos a toda la pagina, pedidos en el ejercicio: */ 
+
+body {
+    /*Define un color de fondo para toda la página. (Usare un color basico el blanco ya que usare mi modo oscuro) */ 
+    background-color: white;
+   
+    /*Cambia la fuente de todo el documento a Arial, sans-serif.*/ 
+    font-family: Arial, sans-serif;
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Establece el color del texto a azul en los párrafos (<p>). */ 
+p {
+    color: blue;
+}
+
+/* Aplica un margen de 20px a todos los elementos <h1>.*/ 
+h1 {
+    margin: 20px;
+}
+
+/* Añade un borde de 2px sólido negro a todos los elementos <div>. */ 
+.main div {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: black solid 2px;
+    background-color: red;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/*Estilos para el contenedor principal (Agrupara y posicionara los elementos header, sidebar y main) */
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 60px; 
+}
+
+/* Estilos basicos para el header */
+.header {
+    width: 100%;
+    background-color: #252525;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+}
+
+/*Estilos basicos al main */ 
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Estilos basicos para el boton */ 
+
+.header button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Añadimos un efecto hover al boton */ 
+
+.header button:hover {
+    background-color: #ccc;
+}
+
+
+/* Estilos para la sidebar */
+.sidebar {
+    width: 7%;
+    background-color: #929292fb;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la barra de navegacion */ 
+
+
+/* Estilo para los elementos de la lista */ 
+
+.sidebar nav ul li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlace */ 
+
+.sidebar nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilo para el icono home*/ 
+
+.home-icon {
+    width: 50px;
+    height: 25px;
+    margin-right: 5px;
+}
+

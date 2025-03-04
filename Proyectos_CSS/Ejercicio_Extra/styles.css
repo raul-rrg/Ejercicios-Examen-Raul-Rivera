@@ -1,0 +1,145 @@
+/* Nombre: Raul Rivera  
+Curso: 1ºDAM
+Fecha:  4/03/25
+Ejercicio Extra  */
+
+
+/* Estilos generales para todo el documento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establece los estilos básicos de la página */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Estilos para la barra lateral: */
+
+/* Como se propone en el ejercicio tendrá 20% de ancho y alineada a la izquierda */ 
+.sidebar {
+    width: 20%;
+    background-color: #444444fb;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la barra de navegación, listas y enlaces */ 
+.sidebar nav ul {
+    margin-top: 60px;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Estilo para el icono home */ 
+.home-icon {
+    width: 50px;
+    height: 25px;
+}
+
+/* Estilos para el header */
+.header {
+    width: 100%;
+    background-color: #252525;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 1;
+}
+
+/* Estilos para el botón */
+.header button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #ccc;
+}
+
+/* Estilos para el main (grid para las tarjetas) */
+.main {
+    margin-left: 10%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
+    gap: 20px;
+    padding: 20px;
+    width: 60%;
+}
+
+/* Estilos comunes para todas las tarjetas */
+.tarjeta {
+    background-color: rgb(255, 254, 254);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+/* Efecto hover para las tarjetas */
+.tarjeta:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+/* Colores diferentes para cada tarjeta*/
+ .tarjeta:nth-child(1) {
+    background-color: #abcc71;
+}
+
+.tarjeta:nth-child(2) {
+    background-color: #538c9e;
+}
+
+.tarjeta:nth-child(3) {
+    background-color: #9064cd;
+}
+
+.tarjeta:nth-child(4) {
+    background-color: #e88080;
+}

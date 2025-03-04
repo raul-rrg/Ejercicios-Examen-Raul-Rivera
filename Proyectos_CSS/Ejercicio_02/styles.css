@@ -1,0 +1,27 @@
+/* 
+Raul Rivera
+1DAM
+[4/03/2025] 
+Ejercicio: Ejercicio 2: Selectores en CSS
+*/
+
+/* Cambiar el color de la clase destacado a rojo*/
+.destacado {
+    color: red;
+}
+
+/* Cambiar el color del parrafo del id = caja a verde*/ 
+
+#caja p {
+    color: green;
+}
+
+/*Cambiar el tamaño de los h1 a 30px*/
+h1 {
+    font-size: 30px;
+}
+
+/*Fondo en gris a los elemetos p dentro de un div*/
+div p {
+    background-color: grey;
+}
